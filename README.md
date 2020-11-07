@@ -1,6 +1,6 @@
-# api-service
+# boxie-api
 
-GraphQL API Service written in Node
+GraphQL API written in Node
 
 ## Startup steps
 

@@ -1,11 +1,10 @@
 import express from 'express';
 import { graphqlHTTP } from 'express-graphql';
-
 import { loadSchemaSync } from '@graphql-tools/load';
 import { GraphQLFileLoader } from '@graphql-tools/graphql-file-loader';
 import { addResolversToSchema } from '@graphql-tools/schema';
-import { join } from 'path';
 import { IResolvers } from 'graphql-tools';
+import { join } from 'path';
 
 const schema = loadSchemaSync(join(__dirname, 'schema.graphql'), { 
   loaders: [
